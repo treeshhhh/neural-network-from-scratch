@@ -1,0 +1,17 @@
+numpy epoch 1: train 0.9658 val 0.9545
+numpy epoch 2: train 0.9777 val 0.9690
+numpy epoch 3: train 0.9820 val 0.9695
+numpy epoch 4: train 0.9837 val 0.9713
+numpy epoch 5: train 0.9866 val 0.9684
+numpy epoch 6: train 0.9882 val 0.9711
+torch epoch 1: train 0.9650 val 0.9546
+torch epoch 2: train 0.9772 val 0.9670
+torch epoch 3: train 0.9804 val 0.9668
+torch epoch 4: train 0.9830 val 0.9700
+torch epoch 5: train 0.9846 val 0.9691
+torch epoch 6: train 0.9898 val 0.9719
+{
+  "numpy_test": 0.9716,
+  "numpy_seconds": 1.1490816250443459,
+  "pytorch_test": 0.9717
+}

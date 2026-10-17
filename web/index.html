@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Digit Lab · NumPy neural network</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body><main>
+<header><span class="eyebrow">NEURAL NETWORK FROM SCRATCH</span><h1>Your handwriting.<br><span>A network’s best guess.</span></h1><p>Draw one digit, 0–9. Watch the existing NumPy model turn your strokes into a prediction, entirely on your computer.</p></header>
+<div class="workspace">
+<section class="drawing panel" aria-labelledby="drawTitle"><div class="section-top"><h2 id="drawTitle">01 / Draw a digit</h2><span class="tag">Mouse or trackpad</span></div>
+<div class="canvas-wrap"><canvas id="drawing" width="280" height="280" aria-label="Drawing area. Draw a digit with a mouse, trackpad, or touch."></canvas><span id="canvasHint" aria-hidden="true">Draw here</span></div>
+<div class="actions"><button id="clear" class="secondary">Clear</button><button id="predict" class="primary">Predict digit <span aria-hidden="true">↗</span></button></div>
+<label class="auto"><input id="auto" type="checkbox" checked> Predict automatically when I stop drawing</label>
+<p class="hint">Use a large, centered digit. Write naturally, with a little space around the edges.</p></section>
+<section class="prediction panel" aria-labelledby="resultTitle"><div class="section-top"><h2 id="resultTitle">02 / See what it sees</h2><span class="tag">NumPy · CPU</span></div>
+<div class="result"><div><span class="eyebrow">PREDICTED DIGIT</span><div id="digit" class="digit">—</div><div id="confidence">Waiting for your first digit</div></div><figure><canvas id="processed" width="28" height="28" aria-label="Exact processed 28 by 28 model input"></canvas><figcaption>28 × 28 model input</figcaption></figure></div>
+<p id="status" role="status" aria-live="polite">A blank canvas is a good place to start.</p>
+<div class="distribution-title"><h3>Class probabilities</h3><span>0 — 9</span></div><div id="probabilities" aria-label="Digit probabilities"></div>
+<p class="hint">Confidence is the model’s probability, not a guarantee. Your handwriting can differ from MNIST, so confidently wrong guesses are possible.</p></section>
+</div>
+<footer><strong>109,386 parameters. No magic API.</strong><p>White strokes → crop → antialiased 20 × 20 fit → center of mass → 784 normalized pixels → the original trained network.</p><p>Drawings stay in memory on this device. No uploads to external services. Multiple digits, letters, and unusual styles are outside the model’s training.</p></footer>
+</main></body></html>

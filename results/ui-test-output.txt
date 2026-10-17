@@ -1,0 +1,39 @@
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 ../../../work/project2-env/bin/python -m unittest discover -s tests -v
+test_checkpoint_matches_shipped_examples (test_artifacts.ArtifactTests.test_checkpoint_matches_shipped_examples) ... ok
+test_generated_svg_parses (test_artifacts.ArtifactTests.test_generated_svg_parses) ... ok
+test_split_indices_and_confusion_counts (test_artifacts.ArtifactTests.test_split_indices_and_confusion_counts) ... ok
+test_assets_and_fixed_routes (test_drawing.DrawingHTTPTests.test_assets_and_fixed_routes) ... ok
+test_end_to_end (test_drawing.DrawingHTTPTests.test_end_to_end) ... ok
+test_malformed_and_oversized (test_drawing.DrawingHTTPTests.test_malformed_and_oversized) ... ok
+test_origin_and_host (test_drawing.DrawingHTTPTests.test_origin_and_host) ... ok
+test_blank_abstains (test_drawing.PredictionTests.test_blank_abstains) ... ok
+test_checkpoint_loaded_once (test_drawing.PredictionTests.test_checkpoint_loaded_once) ... ok
+test_invalid_payloads (test_drawing.PredictionTests.test_invalid_payloads) ... ok
+test_prediction_and_processed_image_contract (test_drawing.PredictionTests.test_prediction_and_processed_image_contract) ... ok
+test_antialias_area_average (test_drawing.PreprocessTests.test_antialias_area_average) ... ok
+test_bbox_aspect_and_normalization (test_drawing.PreprocessTests.test_bbox_aspect_and_normalization) ... ok
+test_blank (test_drawing.PreprocessTests.test_blank) ... ok
+test_invalid_inputs (test_drawing.PreprocessTests.test_invalid_inputs) ... ok
+test_mass_center_and_no_clipping (test_drawing.PreprocessTests.test_mass_center_and_no_clipping) ... ok
+test_row_major_orientation (test_drawing.PreprocessTests.test_row_major_orientation) ... ok
+test_translation_invariance_and_determinism (test_drawing.PreprocessTests.test_translation_invariance_and_determinism) ... ok
+test_idx_headers_and_payload (test_model.DataTests.test_idx_headers_and_payload) ... ok
+test_split_disjoint_and_reproducible (test_model.DataTests.test_split_disjoint_and_reproducible) ... ok
+test_all_gradients_finite_differences (test_model.ModelTests.test_all_gradients_finite_differences) ... ok
+test_checkpoint_prediction_consistency (test_model.ModelTests.test_checkpoint_prediction_consistency) ... ok
+test_deterministic_training (test_model.ModelTests.test_deterministic_training) ... ok
+test_evaluation_batch_invariance_and_no_mutation (test_model.ModelTests.test_evaluation_batch_invariance_and_no_mutation) ... ok
+test_forward_shapes (test_model.ModelTests.test_forward_shapes) ... ok
+test_input_errors (test_model.ModelTests.test_input_errors) ... ok
+test_relu_zero_derivative (test_model.ModelTests.test_relu_zero_derivative) ... ok
+test_sgd_and_momentum_updates (test_model.ModelTests.test_sgd_and_momentum_updates) ... ok
+test_softmax_normalization (test_model.ModelTests.test_softmax_normalization) ... ok
+test_stable_loss (test_model.ModelTests.test_stable_loss) ... ok
+test_training_reduces_loss (test_model.ModelTests.test_training_reduces_loss) ... ok
+test_forward_gradients_and_momentum_steps (test_torch_parity.TorchParityTests.test_forward_gradients_and_momentum_steps) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 2.637s
+
+OK
+Finite differences: 39 parameters; max absolute error 5.65e-12
